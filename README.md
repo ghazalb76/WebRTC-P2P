@@ -16,7 +16,7 @@ Use WebRTC to establish peer to peer connection and transfer files
     ```
 ### What is the problem?
 
- Click [here](/problem.pdf) for all details.   
+ Click [here](/Problem.pdf) for all details.   
  
 ### Features
 
