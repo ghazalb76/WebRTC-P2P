@@ -14,6 +14,10 @@ Use WebRTC to establish peer to peer connection and transfer files
     cd Server
     node filetransfer-server.js
     ```
+### What is the problem?
+
+ Click [here](/problem.pdf) for all details.   
+ 
 ### Features
 
 - Peer 2 Peer File Transfer
