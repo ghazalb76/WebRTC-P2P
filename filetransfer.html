@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.css">
+        <meta charset="utf8" />
+        <title>webRTC Data channel demo</title>
+    </head>
+    <style>
+         body{
+            background-image: url("Background.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            }
+
+        .btn-style{
+
+            font-size: 18px;
+        letter-spacing: 1px;
+        border-radius: 40px;
+        transition: all 0.3s ease 0s;
+        width: 17%;
+        box-shadow: 5px 3px rgba(64, 60, 60, 0.48);
+        color:rgb(128, 128, 128); 
+        text-decoration-line: none; 
+        background-color:rgb(41, 41, 61);
+        }    
+        button:hover{
+            color:rgb(128, 128, 128); 
+            transform: scale(1.1); 
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    </style>
+
+    <body>                                                                                                                                                                                                                                                                                                                                                                              
+        <input type='text' id='usernameTxt' class="form-control" style="width: 29%; margin: 18% 15%;"  placeholder="Enter your username" />
+        <div style="margin: -17% 16%;">
+            <button id='connectToServerBtn' class="btn btn-style"><strong>Connect To Server</strong></button>  
+        </div>   
+        <div style="margin: 15% 30%; width: 65%;">
+            <button id='connectToPeerBtn' class="btn btn-style"><strong>Connect To Peer:</strong></button>  
+        </div> 
+        <select id='usersList' class="form-control" style="width: 8%; background-color:rgba(97, 97, 99, 0.84); border: 0; margin: -14% 31.5%;"></select>
+        <input type='file' id='inputfile' class="form-control" style="width: 24%; margin: 6% 55%;" />  
+        <div style="margin: -5% 57%; width: 47%;">
+            <button id='sendBtn' class="btn btn-style"><strong>Send</strong></button>  
+            <i class="fa fa-send-o" style="margin: 2% 1%; color:rgb(170, 213, 230);"></i>
+        </div>   
+        <div style="margin: 3% 68%; width: 49%;">
+            <button id='clearScreen' class="btn btn-style"><strong>Celar Logs</strong></button>  
+        </div> 
+        <div id='chunkNumberTxt'></div>
+        <div id='sendDataChannelStatusTxt'></div>
+        <div id='resultTxt'></div>
+
+        <script src='js/jquery-3.3.1.min.js'></script>
+        <script src='js/socket.io.js'></script>
+        <script src='js/filetransfer.js'></script>
+    </body>
+</html>
